@@ -73,7 +73,7 @@ Basic authorization with preestablished API KEY (env).
 docker run -d \
     --name=sys-monitor \
     -p 3000:3000 \
-    -e API_KEY=password1234
+    -e API_KEY=password1234 \
     --privileged \
     --volume /:/host \
     borrageiros/sys-monitor
