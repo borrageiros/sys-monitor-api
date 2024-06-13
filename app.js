@@ -28,6 +28,7 @@ app.get(['/', '/:api_key'], async (req, res) => {
                 total: bytesToGB(mem.total),
                 used: bytesToGB(mem.used),
                 free: bytesToGB(mem.free),
+                available: bytesToGB(mem.available),
             },
             disk: disk.map(d => ({
                 filesystem: d.fs,
